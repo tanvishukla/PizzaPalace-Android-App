@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:background="@color/headerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dominoLogo"
+            android:src="@drawable/logo_index_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:id="@+id/dominosText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dominosTitle"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            />
+
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_below="@id/dominosText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcomeText"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/belowTopPanel"
+        android:layout_below="@id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pizzaPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pizza2"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_below="@id/pizzaPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionText"
+            android:textColor="@color/headerBackground"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:id="@+id/deliveryButton"
+            android:layout_below="@id/questionText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/delivary"
+            android:textColor="#ffffff"
+            android:background="@color/questionColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deliveryOption"/>
+
+        <Button
+            android:id="@+id/carryoutButton"
+            android:layout_below="@id/deliveryButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/carryout"
+            android:textColor="#ffffff"
+            android:background="@color/questionColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="carryoutOption"/>
+
+        <Button
+            android:id="@+id/signUpQuestion"
+            android:layout_below="@id/carryoutButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/signUpQuestionText"
+            android:textColor="@color/headerBackground"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createAccount"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/bottomPanel"
+       android:layout_below="@id/belowTopPanel"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="bottom"
+       >
+       <TextView
+           android:id="@+id/ourTeamName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/ourTeamName"
+           android:textColor="@color/headerBackground"
+           android:textSize="10dp"
+           android:textStyle="bold"
+           android:layout_marginBottom="0dp"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+           android:layout_alignParentBottom="true"
+       />
+   </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

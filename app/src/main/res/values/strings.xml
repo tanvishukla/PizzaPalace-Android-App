@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Domino`s</string>
+    <string name="delivary">Delivery</string>
+    <string name="carryout">Carryout</string>
+    <string name="welcomeText">Welcomes You!</string>
+    <string name="dominosTitle">Domino`s</string>
+    <string name="questionText">Is this order for delivery or carryout?</string>
+    <string name="signUpQuestionText">Don`t have an account? SignUp Now!</string>
+    <string name="ourTeamName">2015 DOMINOS @POWERED BY TEAM BRING-IT</string>
+    <string name="pizzaProfile">Pizza Profile</string>
+    <string name="emailId">Email</string>
+    <string name="password">Password</string>
+    <string name="singInButton">Sign-In</string>
+    <string name="singUpButton">Create Account!</string>
+    <string name="nameText">Name</string>
+    <string name="deliveryAddress">Delivery Address</string>
+    <string name="signInRequest">to access saved contact and payment information</string>
+    <string name="streetText">Street Name</string>
+    <string name="aptText">House/Apt No</string>
+    <string name="cityText">City</string>
+    <string name="stateText">State</string>
+    <string name="zipcodeText">Zip-Code</string>
+    <string name="phoneNumber">Phone #</string>
+    <string name="deliveryContinueButton">Continue</string>
+    <string name="signInText">Sign-In</string>
+    <string name="menuText">Menu</string>
+    <string name="errorText">Invalid Input!!</string>
+    <string name="saveAddress">Save Address</string>
+</resources>

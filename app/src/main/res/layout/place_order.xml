@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerBackground"
+        >
+        <TextView
+            android:id="@+id/make_Order_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order "
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/headerBackground"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            />
+   <ListView
+        android:id="@+id/orderList"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">]
+    </ListView>
+
+    <Button
+        android:id="@+id/wantToEatMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/questionColor"
+        android:layout_marginTop="15dp"
+        android:text="Want to Eat more?"
+        android:onClick="addMoreMethod"
+        />
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/questionColor"
+        android:layout_marginTop="20dp"
+        android:text="Place the Order"
+        android:onClick="placeOrderMethod"
+        />
+
+        <TextView
+            android:id="@+id/grandTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/promoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/promoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Promocode: "
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:orientation="horizontal"
+    >
+
+    <EditText
+                android:id="@+id/promoEditText1"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusForward="@+id/promoEditText2"
+                android:visibility="gone"
+
+    />
+
+    <EditText
+        android:id="@+id/promoEditText2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:visibility="gone"
+
+
+        />
+
+    <EditText
+        android:id="@+id/promoEditText3"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:visibility="gone"
+
+        />
+
+    <EditText
+        android:id="@+id/promoEditText4"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:visibility="gone"
+
+        />
+
+
+</LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/promoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <Button
+            android:id="@+id/confirmOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:onClick="ConfirmOrderMethod"
+            android:background="@color/questionColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+

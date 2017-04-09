@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/sizePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerBackground"
+        >
+        <TextView
+            android:id="@+id/deliveryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make an Order"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:id="@id/selected_Pizza_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+
+            android:id="@id/selected_Pizza_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size :"
+            />
+
+        <TextView
+            android:id="@+id/selectedPizzaSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/headerBackground"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity :"/>
+
+        <TextView
+            android:id="@+id/selectedPizzaQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/headerBackground"
+            />
+    </LinearLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/toppingsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    -->
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Toppings"
+        />
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toppingsImage1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:background="@color/headerBackground"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/toppingsText1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/toppingsImage1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/headerBackground"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:text="Cheese"
+            />
+
+        <CheckBox
+            android:id="@+id/toppingCheckbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toppingsImage2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:background="@color/headerBackground"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/toppingsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/toppingsImage2"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/headerBackground"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:text="Onions"
+            />
+
+        <CheckBox
+            android:id="@+id/toppingCheckbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toppingsImage3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:background="@color/headerBackground"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/toppingsText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/toppingsImage3"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/headerBackground"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:text="Garlic"
+            />
+
+        <CheckBox
+            android:id="@+id/toppingCheckbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toppingsImage4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:background="@color/headerBackground"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/toppingsText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/toppingsImage4"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/headerBackground"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:text="Chipotle Sauce"
+            />
+
+        <CheckBox
+            android:id="@+id/toppingCheckbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toppingsImage5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:background="@color/headerBackground"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:id="@+id/toppingsText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/toppingsImage5"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/headerBackground"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:text="Black Olives"
+            />
+
+        <CheckBox
+            android:id="@+id/toppingCheckbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/questionColor"
+        android:text="Add to Cart"
+        android:layout_gravity="center"
+        android:onClick="addToCartMethod"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>
+</ScrollView>

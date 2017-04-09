@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/sizePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerBackground"
+        >
+        <TextView
+            android:id="@+id/deliveryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make an Order"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/selected_Pizza_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+
+            android:id="@+id/selected_Pizza_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/select_sizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Size"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            >
+        <RadioGroup
+            android:id="@+id/sizeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <RadioButton
+                android:id="@+id/small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12inches"/>
+            c<RadioButton
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14inches"/>
+            <RadioButton
+                android:id="@+id/large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16inches"/>
+        </RadioGroup>
+            <RadioGroup
+                android:id="@+id/pastaRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                >
+                <RadioButton
+                    android:id="@+id/whiteSauce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White Sauce"/>
+                <RadioButton
+                    android:id="@+id/redSauce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red Sauce"/>
+            </RadioGroup>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Quantity"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="+"
+                android:background="@color/questionColor"
+                android:onClick="incQuantity"
+                android:layout_toLeftOf="@+id/quantityText"
+                />
+
+            <TextView
+                android:id="@id/quantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="40dp"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="-"
+                android:layout_marginLeft="40dp"
+                android:background="@color/questionColor"
+                android:onClick="decQuantity"
+                android:layout_toRightOf="@id/quantityText"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/questionColor"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Continue"
+            android:onClick="ContinueOrderMethod"
+            />
+    </LinearLayout>
+</LinearLayout>
